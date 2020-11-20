@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from common_msgs.srv import BatteryNum, BatteryNumRequest
+from common_msgs.srv import BatteryNum, BatteryNumResponse
 
 def service_callback(request):
     response = BatteryNumResponse(sum=request.a + request.b)
